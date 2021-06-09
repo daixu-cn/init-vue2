@@ -1,40 +1,7 @@
+@import 'reset';
+@import 'mixins';
+@import 'class';
+
 html {
-  font-size: calc(100vw / 1280);
-}
-//清除浮动
-.clearfix {
-  zoom: 1;
-  &::after {
-    content: '.';
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
-  }
-}
-
-//单行超出隐藏
-@mixin overflow-ellipsis($type: ellipsis) {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: $type;
-}
-
-//多行超出隐藏
-@mixin more-overflow-ellipsis($rowNum: 1) {
-  // $rowNum设定多少行
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $rowNum;
-  overflow: hidden;
-}
-
-//行内元素垂直居中
-@mixin vertical-middle {
-  &::after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
+  font-size: (100vw / 1920);
 }

@@ -1,6 +1,6 @@
 <template>
   <div id="Index">
-    <button>接口测试</button>
+    <h1>这里是主页</h1>
   </div>
 </template>
 
@@ -11,17 +11,14 @@ export default {
     return {}
   },
   created() {},
-  methods: {
-    getInfo() {
-      let { data } = this.$http.get()
-      console.log(data)
-    },
-  },
+  methods: {},
 }
 </script>
 
 <style lang="scss">
 #Index {
-  font-size: 16rem;
+  h1 {
+    font-size: 24rem;
+  }
 }
 </style>

@@ -6,7 +6,6 @@ import store from './store'
 Vue.config.productionTip = false
 
 // 重置css默认属性
-import 'normalize.css/normalize.css'
 import '@/assets/css/global.scss'
 
 //引入element-ui组件库
