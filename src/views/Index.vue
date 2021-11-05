@@ -6,19 +6,20 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: "Index",
   data() {
-    return {}
+    return {};
   },
   created() {},
   methods: {},
-}
+};
 </script>
 
 <style lang="scss">
 #Index {
   h1 {
     font-size: 24rem;
+    @include overflow-ellipsis;
   }
 }
 </style>
