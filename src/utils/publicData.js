@@ -1,4 +1,4 @@
 export default {
-  domain: 'http://www.conjees.com/',
-  imgPrefix: 'http://img.conjees.com/',
-}
+  domain: "https://daixu.cn/",
+  imgPrefix: "https://img.daixu.cn/",
+};
