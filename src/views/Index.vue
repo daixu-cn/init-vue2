@@ -19,6 +19,7 @@ export default {
 #index {
   h1 {
     font-size: 24rem;
+    color: $main-color;
     @include overflow-ellipsis;
   }
 }

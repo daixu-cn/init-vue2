@@ -1,6 +1,8 @@
-@import 'reset';
-@import 'mixins';
-@import 'class';
+@import "reset";
+@import "mixins";
+@import "class";
+
+$main-color: #9fa3f1;
 
 html {
   font-size: (100vw / 1920);

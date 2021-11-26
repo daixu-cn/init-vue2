@@ -23,11 +23,11 @@ router.afterEach((to, from, next) => {
 });
 // 路由守卫--路由跳转之前触发;
 router.beforeEach((to, from, next) => {
-  // if (localStorage.getItem('token')) {
+  // if (sessionStorage.getItem('token')) {
   //   //判断是否需要登录
   //   next()
   // } else {
-  //   if (to.name !== 'Login') {
+  //   if (to.name !== 'login') {
   //     next('/login')
   //   } else {
   //     next()

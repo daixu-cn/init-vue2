@@ -7,8 +7,9 @@ Vue.config.productionTip = false;
 
 //引入element-ui组件库
 import ElementUI from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
+import "@/assets/css/element-variables.scss";
 Vue.use(ElementUI);
+Vue.prototype.$ELEMENT = { size: "small" };
 
 // axios配置
 import { Axios } from "@/utils/fetch";

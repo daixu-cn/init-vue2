@@ -28,23 +28,23 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    async refreshToken({ commit, dispatch }) {
-      clearTimeout(timer);
-      let res = await http.post("/token/refresh");
-      if (res.code === 0) {
-        sessionStorage.setItem("token", res.data.token);
-        commit("SET_TOKEN", res.data.token);
-        commit("SET_USER", {
-          userName: res.data.username,
-          userId: res.data.userId,
-        });
-        setTimeout(() => {
-          dispatch("refreshToken");
-        }, 1000 * 60 * 50);
-      } else {
-        commit("RESET_USER");
-      }
-    },
+    // async refreshToken({ commit, dispatch }) {
+    //   clearTimeout(timer);
+    //   let res = await http.post("/token/refresh");
+    //   if (res.code === 0) {
+    //     sessionStorage.setItem("token", res.data.token);
+    //     commit("SET_TOKEN", res.data.token);
+    //     commit("SET_USER", {
+    //       userName: res.data.username,
+    //       userId: res.data.userId,
+    //     });
+    //     setTimeout(() => {
+    //       dispatch("refreshToken");
+    //     }, 1000 * 60 * 50);
+    //   } else {
+    //     commit("RESET_USER");
+    //   }
+    // },
   },
   modules: {},
 });
