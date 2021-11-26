@@ -1,6 +1,10 @@
 <template>
   <div id="index">
-    <h1>这里是主页</h1>
+    <h1>
+      <a href="https://blog.daixu.cn/" target="_blank"
+        >daixu博客地址: https://blog.daixu.cn/</a
+      >
+    </h1>
   </div>
 </template>
 
@@ -18,9 +22,14 @@ export default {
 <style lang="scss">
 #index {
   h1 {
-    font-size: 24rem;
-    color: $main-color;
-    @include overflow-ellipsis;
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    a {
+      color: $main-color;
+    }
   }
 }
 </style>
