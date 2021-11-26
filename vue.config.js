@@ -21,8 +21,8 @@ module.exports = {
     hotOnly: true, // 热更新
     // proxy: {
     //   //配置多个跨域
-    //   '/user': {
-    //     target: 'http://127.0.0.1:3000',
+    //   '/api': {
+    //     target: 'https://daixu.cn',
     //     changeOrigin: true,
     //     // ws: true,//是否支持websocket
     //     secure: false,
