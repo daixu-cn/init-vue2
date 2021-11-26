@@ -1,12 +1,12 @@
 <template>
-  <div id="Index">
+  <div id="index">
     <h1>这里是主页</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Index",
+  name: "index",
   data() {
     return {};
   },
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-#Index {
+#index {
   h1 {
     font-size: 24rem;
     @include overflow-ellipsis;

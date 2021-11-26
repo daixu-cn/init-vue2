@@ -1,26 +1,26 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Index',
-    component: () => import('../views/Index.vue'),
+    path: "/",
+    name: "index",
+    component: () => import("../views/index.vue"),
   },
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes,
-})
+});
 
 // 路由守卫--路由跳转之后触发;
 router.afterEach((to, from, next) => {
-  window.scrollTo(0, 0) //跳转之后回到顶部
-})
+  window.scrollTo(0, 0); //跳转之后回到顶部
+});
 // 路由守卫--路由跳转之前触发;
 router.beforeEach((to, from, next) => {
   // if (localStorage.getItem('token')) {
@@ -33,6 +33,6 @@ router.beforeEach((to, from, next) => {
   //     next()
   //   }
   // }
-  next()
-})
-export default router
+  next();
+});
+export default router;
